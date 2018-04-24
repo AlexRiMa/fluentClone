@@ -1,5 +1,8 @@
 <div> 
-  <img src="" alt="">
+  <img [src]="imgUrl" alt="">
   <h3>{{nombre}}</h3>
   <p>Salario: {{salario | currency:'EUR'}}</p>
+  <div>
+    <span *ngFor="let skill of skills">{{skill}}</span>
+  </div>
 </div>

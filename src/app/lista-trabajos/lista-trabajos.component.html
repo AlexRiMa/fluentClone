@@ -1,3 +1,2 @@
-<p>
-  lista-trabajos works!
-</p>
+<h2>Startup Jobs</h2>
+<app-trabajo *ngFor ="let trabajo of trabajos" [nombre]="trabajo.nombre" [salario]="trabajo.salario" [imgUrl]="trabajo.imgUrl" [skills]="trabajo.skills"></app-trabajo>
